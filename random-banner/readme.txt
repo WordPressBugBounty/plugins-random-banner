@@ -1,12 +1,13 @@
 === Random Banner ===
 Contributors: vinoth06, buffercode
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7DHAEMST475BY
-Tags: banner, advertisement, banner ads, random banner, ads campaign
-Requires at least: 5.3
-Tested up to: 6.4.3
-Stable tag: 4.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: banner, advertisement, banner ads, random banner, ads campaign
+Requires at least: 5.3
+Tested up to: 6.6.2
+Stable tag: 4.2.9
+Requires PHP: 7.0
 
 Random Banner WordPress plugin provides users with high level of flexibility to show image banners, SWF banners and script ads randomly
 

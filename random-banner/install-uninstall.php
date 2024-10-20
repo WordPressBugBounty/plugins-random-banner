@@ -94,14 +94,15 @@ function bc_rb_enqueue() {
  * Notifications.
  */
 function bc_rb_notifications() {
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 	if ( isset( $_REQUEST['bc_status'] ) ) {
 		?>
-        <div class="bc_fed container">
-            <div class="alert alert-danger">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>Something went wrong, please contact - support@buffercode.com</strong>
-            </div>
-        </div>
+		<div class="bc_fed container">
+			<div class="alert alert-danger">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>Something went wrong, please contact - support@buffercode.com</strong>
+			</div>
+		</div>
 		<?php
 	}
 }
