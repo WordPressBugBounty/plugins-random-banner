@@ -42,7 +42,7 @@ add_action( 'wp_ajax_nopriv_bc_delete_dbs', 'bc_rb_save_banner_no_priv' );
  */
 function bc_rb_delete_banner() {
 	$post_payload = bc_rb_sanitize_text_field( $_REQUEST );
-	if ( isset( $post_payload['nonce'] ) && ! empty( $post_payload['nonce'] ) ) {
+	if ( ! empty( $post_payload['nonce'] ) ) {
 		bc_rb_check_nonce( $post_payload['nonce'], 'bc_rb_nonce_delete' );
 		// Delete Upload or Script Banner by ID.
 		bc_rb_delete_upload_script( $post_payload );
@@ -54,7 +54,7 @@ function bc_rb_delete_banner() {
  * Save Banner
  */
 function bc_rb_save_banner() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['nonce'], 'bc_rb_nonce' );
 		// Create or update the uploaded or script banner type.
 		bc_rb_create_update_upload_script( $_POST );
@@ -65,7 +65,7 @@ function bc_rb_save_banner() {
  * Skip Donation Banner Popup by 2 days
  */
 function bc_rb_donation_later() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['nonce'], 'bc_rb_donation_later' );
 
 		// Update DB to remind Later.
@@ -77,7 +77,7 @@ function bc_rb_donation_later() {
  * Restricting for No Privilege Users
  */
 function bc_rb_save_banner_no_priv() {
-	_e( 'Sorry! you are not authorized to do this action', 'random-banner' );
+	esc_html_e( 'Sorry! you are not authorized to do this action', 'random-banner' );
 	die();
 }
 
@@ -85,7 +85,7 @@ function bc_rb_save_banner_no_priv() {
  * Save Options
  */
 function bc_rb_save_options() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['nonce'], 'bc_rb_save_options' );
 		bc_rb_save_setting_options( $_POST );
 	}
@@ -95,7 +95,7 @@ function bc_rb_save_options() {
  * Save Popup
  */
 function bc_rb_save_popup() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['nonce'], 'bc_rb_save_popup' );
 		$post_payload = bc_rb_sanitize_text_field( $_POST );
 		bc_rb_save_popup_options( $post_payload );
@@ -125,7 +125,7 @@ function bc_rb_delete_category() {
  * Insert Shortcode inside the post Save
  */
 function bc_rb_save_insert_post() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['nonce'], 'bc_rb_save_insert_post' );
 		bc_rb_save_insert_post_model( $_REQUEST );
 	}
@@ -135,7 +135,7 @@ function bc_rb_save_insert_post() {
  * Delete all DBs and its options
  */
 function bc_delete_dbs() {
-	if ( isset( $_REQUEST['nonce'] ) && ! empty( $_REQUEST['nonce'] ) ) {
+	if ( ! empty( $_REQUEST['nonce'] ) ) {
 		bc_rb_check_nonce( $_REQUEST['bc_delete_dbs'], 'bc_delete_dbs' );
 		uninstall_bc_random_banner_table();
 

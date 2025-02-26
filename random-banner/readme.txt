@@ -5,8 +5,8 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: banner, advertisement, banner ads, random banner, ads campaign
 Requires at least: 5.3
-Tested up to: 6.6.2
-Stable tag: 4.2.9
+Tested up to: 6.7.2
+Stable tag: 4.2.10
 Requires PHP: 7.0
 
 Random Banner WordPress plugin provides users with high level of flexibility to show image banners, SWF banners and script ads randomly
@@ -143,6 +143,9 @@ Answer: You can add shortcode from version 3.4 onwards,
 For more information : [Random Banner Support](https://buffercode.com/plugin/random-banner-pro)
 
 == Changelog ==
+= v 4.2.10 (20250227) =
+* Code Refactor.
+
 = v 4.2.8 (20240401) =
 * Code Refactor.
 
