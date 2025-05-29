@@ -9,7 +9,7 @@ Tested up to: 6.7.2
 Stable tag: 4.2.11
 Requires PHP: 7.0
 
-The Random Banner plugin allows you to display image, SWF, or script-based advertisements randomly across your WordPress site. Highly customizable and easy to use.
+Display random image, SWF, or script ads across your WordPress site with this powerful, customizable, and user-friendly Random Banner plugin.
 
 == Description ==
 Random Banner is a flexible WordPress plugin that enables you to display various types of banner ads (Image, SWF, or Script) randomly throughout your website. Whether you're running ad campaigns or promoting content, this plugin offers powerful placement and control options.
