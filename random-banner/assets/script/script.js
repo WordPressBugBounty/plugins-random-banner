@@ -728,7 +728,7 @@ function content_fn_upload(category) {
         '<input type="text" name="file_url_link" class="form-control file_url_link" placeholder="Upload Image"/>' +
         '</div>' +
         '<div class="col-md-6">' +
-        '<input type="text" name="file_description" class="form-control file_description" placeholder="File Description"/>' +
+        '<input type="text" name="file_description" class="form-control file_description" placeholder="Banner Title/Description"/>' +
         '</div>' +
         '<div class="col-md-12 padding_top_10">' +
         '<input type="text" name="external_link" class="bc_rb_external_link form-control" placeholder="External Link" />' +

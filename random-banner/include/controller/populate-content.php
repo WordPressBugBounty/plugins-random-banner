@@ -89,7 +89,7 @@ function loop_data( $rows ) {
 							     </div>
 								<div class="col-md-6">
 								     <label>' . __( 'Description', 'random-banner' ) . '</label>
-								      <input readonly type="text" name="file_description" class="form-control file_description" placeholder="File Description" value="' . esc_attr( $row->file_description ) . '"/>
+								      <input readonly type="text" name="file_description" class="form-control file_description" placeholder="Banner Title/Description" value="' . esc_attr( $row->file_description ) . '"/>
 							      </div>
 								<div class="col-md-12 padding_top_10">
 									<label>' . __( 'External URL', 'random-banner' ) . '</label>
